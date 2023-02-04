@@ -13,6 +13,12 @@ function AccessDenied() {
   )
 }
 
+function PaymentStatus() {
+  return (
+    <h1>Payment Status -- Response</h1>
+  )
+}
+
 function App() {
   return (
     <div className="App">
@@ -20,6 +26,7 @@ function App() {
         <Route path="/" element={<Payment />} />
         <Route path="/live/:accessToken" element={<Livestream />} />
         <Route path="/invalidaccess" element={<AccessDenied />} />
+        <Route path="/paymentstatus" element={<PaymentStatus />} />
       </Routes>
     </div>
   );
