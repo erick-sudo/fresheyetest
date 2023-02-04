@@ -1,0 +1,122 @@
+.App {
+  text-align: center;
+  margin: 1em 2em;
+}
+html {
+  background-color: #282c34;
+  background-color: white;
+}
+* {
+  box-sizing: border-box;
+}
+.payment {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.poster {
+  position: relative;
+}
+.mpesa-logo {
+  border-radius: 20px;
+  width: 100%;
+}
+.poster > img{
+  width: 100%;
+  border: solid 10px green;
+  display: block;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.event-calendar {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0px;
+  left: 2em;
+  color: rgb(148, 17, 17);
+  border: solid 8px green;
+  font-size: 2em;
+  font-weight: bolder;
+  padding: 0.2em;
+  background-color: white;
+}
+.phone-number {
+  border: solid 1px gray;
+  width: 70%;
+
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  padding: 0.5em 0em;
+}
+.access-denied {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(43, 68, 23, 0.678);
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  bottom: 10%;
+  border-radius: 10px;
+  color: rgb(61, 16, 16);
+}
+.shield-access {
+  font-size: 10em;
+}
+input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.phone-number > * {
+  
+}
+.country-code {
+}
+input[type="number"] {
+  background-color: rgba(128, 128, 128, 0.253);
+  border-radius: 5px;
+  display: block;
+  padding: 6px;
+}
+input[type="submit"] {
+  margin-top: 0.8em;
+
+  background-color: green;
+  font-weight: bolder;
+  padding: 1.2em 0em;
+  border-radius: 5px;
+  width: 70%;
+  color: white;
+}
+
+@media (orientation: landscape) {
+  .poster, .payment-form {
+    width: 50%;
+  }
+  .payment {
+    flex-direction: row;
+  }
+  .poster {
+    background-image: linear-gradient(90deg, green, black);
+  }
+}
+
+@media (orientation: portrait) {
+  .poster, .payment-form {
+    width: 90%;
+  }
+  .payment {
+    flex-direction: column;
+  }
+}
